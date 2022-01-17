@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script> <!-- defer to execute it at the end-->
+</head>
+<body>
+    <main>
+        <h1>Prepare yourself to fight in an endless war.</h1>
+        
+        <section id="menuArea">
+            <h2>Menu</h2>
+            <button id= "startGame"> start game </button>
+            <!-- Add input to bet a number of turn -->
+            <!-- Add radio btn to set difficulty -->
+        </section>
+
+        <section id="scoreArea">
+            <h2>Score</h2>
+            <p id="score">0</p>
+            <button id= "restartGame"> Restart </button>
+        </section>
+
+        <section id="chooseHeroArea">
+            <h2>Choose a character to play with</h2>
+            <div class="card" id="characterCard">
+                <img src="images/1.png" alt="card image">
+                <div class="cardContainer">
+                  <h3 id="name">name</h3>
+                  <p id="attack">Attack</p>
+                  <p id="life">lifePoint</p>
+                  <button id="chooseThisHero">Choose me !</button>
+                  <button id="chooseAnotherHero">Duh !!! this is not my hero !</button>
+                </div>
+              </div>
+        </section>
+
+        <section id="eventsArea">
+            <h2>Face your destiny</h2>
+            <div class="card">
+                <img src="images/2.png" alt="card image">
+                <div class="cardContainer">
+                  <h3 id="event">name</h3>
+                  <p id="point">Attack</p>
+                  <button id="fight">Let's go</button>
+                </div>
+              </div>
+        </section>
+        
+    </main>
+
+</body>
+</html>
